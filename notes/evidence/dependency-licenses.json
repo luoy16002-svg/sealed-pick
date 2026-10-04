@@ -1,0 +1,2161 @@
+{
+  "generatedAt": "2026-10-04T02:51:01.786Z",
+  "policy": "Permissive installed dependencies; npm optional dependencies omitted",
+  "installed": [
+    {
+      "name": "@apollo/client",
+      "version": "4.3.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@balena/dockerignore",
+      "version": "1.0.2",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@effect/platform",
+      "version": "0.95.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@effect/platform",
+      "version": "0.96.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@graphql-typed-document-node/core",
+      "version": "3.2.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@grpc/grpc-js",
+      "version": "1.14.5",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@grpc/proto-loader",
+      "version": "0.8.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@grpc/proto-loader",
+      "version": "0.7.15",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@isaacs/cliui",
+      "version": "8.0.2",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@js-sdsl/ordered-map",
+      "version": "4.4.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@kwsites/file-exists",
+      "version": "1.1.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/compact-js",
+      "version": "2.5.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/compact-runtime",
+      "version": "0.16.0",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/dapp-connector-api",
+      "version": "4.0.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/ledger-v8",
+      "version": "8.1.0",
+      "license": "Apache-2.0",
+      "source": "https://github.com/midnightntwrk/midnight-ledger/blob/main/LICENSE"
+    },
+    {
+      "name": "@midnight-ntwrk/midnight-js-compact",
+      "version": "4.1.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/midnight-js-contracts",
+      "version": "4.1.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/midnight-js-http-client-proof-provider",
+      "version": "4.1.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/midnight-js-indexer-public-data-provider",
+      "version": "4.1.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/midnight-js-level-private-state-provider",
+      "version": "4.1.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/midnight-js-network-id",
+      "version": "4.1.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/midnight-js-node-zk-config-provider",
+      "version": "4.1.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/midnight-js-protocol",
+      "version": "4.1.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/midnight-js-types",
+      "version": "4.1.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/midnight-js-utils",
+      "version": "4.1.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/onchain-runtime-v3",
+      "version": "3.0.0",
+      "license": "Apache-2.0",
+      "source": "https://github.com/midnightntwrk/midnight-ledger/blob/main/LICENSE"
+    },
+    {
+      "name": "@midnight-ntwrk/platform-js",
+      "version": "2.2.4",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/testkit-js",
+      "version": "4.1.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/wallet-sdk",
+      "version": "1.1.0",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/wallet-sdk-abstractions",
+      "version": "2.1.0",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/wallet-sdk-address-format",
+      "version": "3.1.2",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/wallet-sdk-capabilities",
+      "version": "3.3.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/wallet-sdk-dust-wallet",
+      "version": "4.1.0",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/wallet-sdk-facade",
+      "version": "4.0.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/wallet-sdk-hd",
+      "version": "3.0.2",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/wallet-sdk-indexer-client",
+      "version": "1.2.2",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/wallet-sdk-node-client",
+      "version": "1.1.2",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/wallet-sdk-prover-client",
+      "version": "1.2.2",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/wallet-sdk-runtime",
+      "version": "1.0.4",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/wallet-sdk-shielded",
+      "version": "3.0.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/wallet-sdk-unshielded-wallet",
+      "version": "3.1.0",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/wallet-sdk-utilities",
+      "version": "1.2.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@midnight-ntwrk/zkir-v2",
+      "version": "2.1.0",
+      "license": "Apache-2.0",
+      "source": "https://github.com/midnightntwrk/midnight-ledger/blob/main/LICENSE"
+    },
+    {
+      "name": "@noble/ciphers",
+      "version": "2.4.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@noble/curves",
+      "version": "1.9.7",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@noble/curves",
+      "version": "2.4.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@noble/hashes",
+      "version": "1.8.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@noble/hashes",
+      "version": "2.4.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@noble/hashes",
+      "version": "1.8.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@noble/hashes",
+      "version": "1.8.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@pinojs/redact",
+      "version": "0.4.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/api",
+      "version": "16.5.6",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/api-augment",
+      "version": "16.5.6",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/api-base",
+      "version": "16.5.6",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/api-derive",
+      "version": "16.5.6",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/keyring",
+      "version": "14.0.3",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/networks",
+      "version": "14.0.3",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/rpc-augment",
+      "version": "16.5.6",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/rpc-core",
+      "version": "16.5.6",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/rpc-provider",
+      "version": "16.5.6",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/types",
+      "version": "16.5.6",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/types-augment",
+      "version": "16.5.6",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/types-codec",
+      "version": "16.5.6",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/types-create",
+      "version": "16.5.6",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/types-known",
+      "version": "16.5.6",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/types-support",
+      "version": "16.5.6",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/util",
+      "version": "14.0.3",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/util-crypto",
+      "version": "14.0.3",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/wasm-bridge",
+      "version": "7.5.4",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/wasm-crypto",
+      "version": "7.5.4",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/wasm-crypto-asmjs",
+      "version": "7.5.4",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/wasm-crypto-init",
+      "version": "7.5.4",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/wasm-crypto-wasm",
+      "version": "7.5.4",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/wasm-util",
+      "version": "7.5.4",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/x-bigint",
+      "version": "14.0.3",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/x-fetch",
+      "version": "14.0.3",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/x-global",
+      "version": "14.0.3",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/x-randomvalues",
+      "version": "14.0.3",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/x-textdecoder",
+      "version": "14.0.3",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/x-textencoder",
+      "version": "14.0.3",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@polkadot/x-ws",
+      "version": "14.0.3",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@protobufjs/aspromise",
+      "version": "1.1.2",
+      "license": "BSD-3-Clause",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@protobufjs/base64",
+      "version": "1.1.2",
+      "license": "BSD-3-Clause",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@protobufjs/codegen",
+      "version": "2.0.5",
+      "license": "BSD-3-Clause",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@protobufjs/eventemitter",
+      "version": "1.1.1",
+      "license": "BSD-3-Clause",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@protobufjs/fetch",
+      "version": "1.1.1",
+      "license": "BSD-3-Clause",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@protobufjs/float",
+      "version": "1.0.2",
+      "license": "BSD-3-Clause",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@protobufjs/path",
+      "version": "1.1.2",
+      "license": "BSD-3-Clause",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@protobufjs/pool",
+      "version": "1.1.0",
+      "license": "BSD-3-Clause",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@protobufjs/utf8",
+      "version": "1.1.2",
+      "license": "BSD-3-Clause",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@scure/base",
+      "version": "1.2.6",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@scure/base",
+      "version": "2.4.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@scure/bip32",
+      "version": "2.4.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@scure/bip39",
+      "version": "2.4.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@scure/sr25519",
+      "version": "0.2.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@sealed-pick/core",
+      "version": "0.1.0",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@sealed-pick/scale-compact",
+      "version": "0.1.0",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@standard-schema/spec",
+      "version": "1.1.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@substrate/ss58-registry",
+      "version": "1.51.0",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@types/bn.js",
+      "version": "5.2.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@types/docker-modem",
+      "version": "3.0.6",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@types/dockerode",
+      "version": "4.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@types/node",
+      "version": "24.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@types/node",
+      "version": "18.19.130",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@types/object-inspect",
+      "version": "1.13.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@types/ssh2",
+      "version": "1.15.6",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@types/ssh2",
+      "version": "0.5.52",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@types/ssh2-streams",
+      "version": "0.1.13",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@wry/caches",
+      "version": "1.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@wry/context",
+      "version": "0.7.4",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@wry/equality",
+      "version": "0.5.7",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "@wry/trie",
+      "version": "0.5.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "abort-controller",
+      "version": "3.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "abstract-level",
+      "version": "3.1.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "agent-base",
+      "version": "6.0.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "ansi-regex",
+      "version": "6.4.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "ansi-regex",
+      "version": "5.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "ansi-regex",
+      "version": "5.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "ansi-regex",
+      "version": "5.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "ansi-regex",
+      "version": "5.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "ansi-regex",
+      "version": "5.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "ansi-styles",
+      "version": "6.2.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "ansi-styles",
+      "version": "4.3.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "ansi-styles",
+      "version": "4.3.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "archiver",
+      "version": "7.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "archiver-utils",
+      "version": "5.0.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "asn1",
+      "version": "0.2.6",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "async",
+      "version": "3.2.6",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "async-lock",
+      "version": "1.4.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "asynckit",
+      "version": "0.4.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "atomic-sleep",
+      "version": "1.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "axios",
+      "version": "1.20.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "b4a",
+      "version": "1.9.0",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "balanced-match",
+      "version": "1.0.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "bare-events",
+      "version": "2.9.2",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "bare-fs",
+      "version": "4.8.2",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "bare-path",
+      "version": "3.1.2",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "bare-stream",
+      "version": "2.13.4",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "bare-url",
+      "version": "2.5.4",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "base64-js",
+      "version": "1.5.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "bcrypt-pbkdf",
+      "version": "1.0.2",
+      "license": "BSD-3-Clause",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "bl",
+      "version": "4.1.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "bn.js",
+      "version": "5.2.5",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "brace-expansion",
+      "version": "2.1.7",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "browser-level",
+      "version": "3.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "buffer",
+      "version": "5.7.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "buffer",
+      "version": "6.0.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "buffer-crc32",
+      "version": "1.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "byline",
+      "version": "5.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "call-bind-apply-helpers",
+      "version": "1.0.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "chownr",
+      "version": "1.1.4",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "classic-level",
+      "version": "3.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "cliui",
+      "version": "8.0.1",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "color-convert",
+      "version": "2.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "color-name",
+      "version": "1.1.4",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "colorette",
+      "version": "2.0.20",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "combined-stream",
+      "version": "1.0.8",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "compress-commons",
+      "version": "6.0.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "copy-anything",
+      "version": "4.1.5",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "core-util-is",
+      "version": "1.0.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "crc-32",
+      "version": "1.2.2",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "crc32-stream",
+      "version": "6.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "cross-fetch",
+      "version": "4.1.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "cross-spawn",
+      "version": "7.0.6",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "data-uri-to-buffer",
+      "version": "4.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "dateformat",
+      "version": "4.6.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "debug",
+      "version": "4.4.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "delayed-stream",
+      "version": "1.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "docker-compose",
+      "version": "1.5.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "docker-modem",
+      "version": "5.0.7",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "dockerode",
+      "version": "5.0.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "dunder-proto",
+      "version": "1.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "eastasianwidth",
+      "version": "0.2.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "effect",
+      "version": "3.22.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "emoji-regex",
+      "version": "8.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "emoji-regex",
+      "version": "9.2.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "emoji-regex",
+      "version": "8.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "emoji-regex",
+      "version": "8.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "emoji-regex",
+      "version": "8.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "end-of-stream",
+      "version": "1.4.5",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "es-define-property",
+      "version": "1.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "es-errors",
+      "version": "1.3.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "es-object-atoms",
+      "version": "1.1.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "es-set-tostringtag",
+      "version": "2.1.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "escalade",
+      "version": "3.2.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "event-target-shim",
+      "version": "5.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "eventemitter3",
+      "version": "5.0.4",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "events",
+      "version": "3.3.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "events-universal",
+      "version": "1.0.1",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "fast-check",
+      "version": "3.23.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "fast-copy",
+      "version": "4.1.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "fast-fifo",
+      "version": "1.3.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "fast-safe-stringify",
+      "version": "2.1.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "fetch-blob",
+      "version": "3.2.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "fetch-retry",
+      "version": "6.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "find-my-way-ts",
+      "version": "0.1.6",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "follow-redirects",
+      "version": "1.16.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "foreground-child",
+      "version": "3.3.1",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "form-data",
+      "version": "4.0.6",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "formdata-polyfill",
+      "version": "4.0.10",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "fs-constants",
+      "version": "1.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "function-bind",
+      "version": "1.1.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "get-caller-file",
+      "version": "2.0.5",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "get-intrinsic",
+      "version": "1.3.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "get-port",
+      "version": "5.1.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "get-proto",
+      "version": "1.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "glob",
+      "version": "10.4.5",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "gopd",
+      "version": "1.2.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "graceful-fs",
+      "version": "4.2.11",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "graphql",
+      "version": "16.14.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "graphql-http",
+      "version": "1.23.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "graphql-tag",
+      "version": "2.12.7",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "graphql-ws",
+      "version": "6.3.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "has-symbols",
+      "version": "1.1.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "has-tostringtag",
+      "version": "1.0.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "hasown",
+      "version": "2.0.4",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "help-me",
+      "version": "5.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "https-proxy-agent",
+      "version": "5.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "ieee754",
+      "version": "1.2.1",
+      "license": "BSD-3-Clause",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "inherits",
+      "version": "2.0.4",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "is-buffer",
+      "version": "2.0.5",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "is-fullwidth-code-point",
+      "version": "3.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "is-stream",
+      "version": "2.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "isarray",
+      "version": "1.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "isexe",
+      "version": "2.0.0",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "isomorphic-ws",
+      "version": "5.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "jackspeak",
+      "version": "3.4.3",
+      "license": "BlueOak-1.0.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "joycon",
+      "version": "3.1.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "json-stringify-safe",
+      "version": "5.0.1",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "lazystream",
+      "version": "1.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "level",
+      "version": "10.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "level-supports",
+      "version": "6.2.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "level-transcoder",
+      "version": "1.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "lodash",
+      "version": "4.18.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "lodash.camelcase",
+      "version": "4.3.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "long",
+      "version": "5.3.2",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "lru-cache",
+      "version": "10.4.3",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "math-intrinsics",
+      "version": "1.1.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "maybe-combine-errors",
+      "version": "1.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "mime-db",
+      "version": "1.52.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "mime-types",
+      "version": "2.1.35",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "minimatch",
+      "version": "9.0.9",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "minimatch",
+      "version": "5.1.9",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "minimist",
+      "version": "1.2.8",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "minipass",
+      "version": "7.1.3",
+      "license": "BlueOak-1.0.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "mkdirp",
+      "version": "3.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "mkdirp-classic",
+      "version": "0.5.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "mock-socket",
+      "version": "9.3.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "module-error",
+      "version": "1.0.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "ms",
+      "version": "2.1.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "msgpackr",
+      "version": "1.12.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "multipasta",
+      "version": "0.2.8",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "napi-macros",
+      "version": "2.2.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "nock",
+      "version": "13.5.6",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "node-domexception",
+      "version": "1.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "node-fetch",
+      "version": "2.7.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "node-fetch",
+      "version": "3.3.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "node-gyp-build",
+      "version": "4.8.4",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "normalize-path",
+      "version": "3.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "object-inspect",
+      "version": "1.13.4",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "on-exit-leak-free",
+      "version": "2.1.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "once",
+      "version": "1.4.0",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "optimism",
+      "version": "0.18.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "package-json-from-dist",
+      "version": "1.0.1",
+      "license": "BlueOak-1.0.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "path-key",
+      "version": "3.1.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "path-scurry",
+      "version": "1.11.1",
+      "license": "BlueOak-1.0.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "pino",
+      "version": "10.3.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "pino-abstract-transport",
+      "version": "3.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "pino-pretty",
+      "version": "13.1.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "pino-std-serializers",
+      "version": "7.1.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "process",
+      "version": "0.11.10",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "process-nextick-args",
+      "version": "2.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "process-warning",
+      "version": "5.1.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "propagate",
+      "version": "2.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "proper-lockfile",
+      "version": "4.1.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "properties-reader",
+      "version": "3.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "protobufjs",
+      "version": "7.6.6",
+      "license": "BSD-3-Clause",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "proxy-from-env",
+      "version": "2.1.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "pump",
+      "version": "3.0.4",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "pure-rand",
+      "version": "6.1.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "quick-format-unescaped",
+      "version": "4.0.4",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "readable-stream",
+      "version": "3.6.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "readable-stream",
+      "version": "3.6.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "readable-stream",
+      "version": "3.6.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "readable-stream",
+      "version": "2.3.8",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "readable-stream",
+      "version": "4.7.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "readdir-glob",
+      "version": "1.1.3",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "real-require",
+      "version": "0.2.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "real-require",
+      "version": "1.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "require-directory",
+      "version": "2.1.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "retry",
+      "version": "0.12.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "rxjs",
+      "version": "7.8.2",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "safe-buffer",
+      "version": "5.1.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "safe-buffer",
+      "version": "5.2.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "safe-stable-stringify",
+      "version": "2.5.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "safer-buffer",
+      "version": "2.1.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "secure-json-parse",
+      "version": "4.1.0",
+      "license": "BSD-3-Clause",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "shebang-command",
+      "version": "2.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "shebang-regex",
+      "version": "3.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "signal-exit",
+      "version": "3.0.7",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "signal-exit",
+      "version": "4.1.0",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "sonic-boom",
+      "version": "4.2.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "split-ca",
+      "version": "1.0.1",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "split2",
+      "version": "4.2.0",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "ssh-remote-port-forward",
+      "version": "1.0.4",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "ssh2",
+      "version": "1.17.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "streamx",
+      "version": "2.28.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "string_decoder",
+      "version": "1.1.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "string_decoder",
+      "version": "1.3.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "string-width",
+      "version": "4.2.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "string-width",
+      "version": "5.1.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "string-width",
+      "version": "4.2.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "string-width",
+      "version": "4.2.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "string-width",
+      "version": "4.2.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "strip-ansi",
+      "version": "6.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "strip-ansi",
+      "version": "6.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "strip-ansi",
+      "version": "7.2.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "strip-ansi",
+      "version": "6.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "strip-ansi",
+      "version": "6.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "strip-ansi",
+      "version": "6.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "strip-json-comments",
+      "version": "5.0.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "superjson",
+      "version": "2.2.6",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "tar-fs",
+      "version": "2.1.5",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "tar-fs",
+      "version": "3.1.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "tar-stream",
+      "version": "2.2.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "tar-stream",
+      "version": "3.2.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "teex",
+      "version": "1.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "testcontainers",
+      "version": "12.2.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "text-decoder",
+      "version": "1.2.7",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "thread-stream",
+      "version": "4.2.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "tmp",
+      "version": "0.2.7",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "tr46",
+      "version": "0.0.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "tslib",
+      "version": "2.8.1",
+      "license": "0BSD",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "tweetnacl",
+      "version": "0.14.5",
+      "license": "Unlicense",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "typescript",
+      "version": "5.9.3",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "undici",
+      "version": "8.11.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "undici-types",
+      "version": "5.26.5",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "undici-types",
+      "version": "7.8.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "util-deprecate",
+      "version": "1.0.2",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "web-streams-polyfill",
+      "version": "3.3.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "web-worker",
+      "version": "1.5.0",
+      "license": "Apache-2.0",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "webidl-conversions",
+      "version": "3.0.1",
+      "license": "BSD-2-Clause",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "whatwg-url",
+      "version": "5.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "which",
+      "version": "2.0.2",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "wrap-ansi",
+      "version": "7.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "wrap-ansi",
+      "version": "8.1.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "wrap-ansi",
+      "version": "7.0.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "wrappy",
+      "version": "1.0.2",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "ws",
+      "version": "8.22.0",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "y18n",
+      "version": "5.0.8",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "yaml",
+      "version": "2.9.1",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "yargs",
+      "version": "17.7.3",
+      "license": "MIT",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "yargs-parser",
+      "version": "21.1.1",
+      "license": "ISC",
+      "source": "installed package metadata"
+    },
+    {
+      "name": "zip-stream",
+      "version": "6.0.1",
+      "license": "MIT",
+      "source": "installed package metadata"
+    }
+  ],
+  "excludedOptional": [
+    "node_modules/@msgpackr-extract/msgpackr-extract-darwin-arm64",
+    "node_modules/@msgpackr-extract/msgpackr-extract-darwin-x64",
+    "node_modules/@msgpackr-extract/msgpackr-extract-linux-arm",
+    "node_modules/@msgpackr-extract/msgpackr-extract-linux-arm64",
+    "node_modules/@msgpackr-extract/msgpackr-extract-linux-x64",
+    "node_modules/@msgpackr-extract/msgpackr-extract-win32-x64",
+    "node_modules/@pkgjs/parseargs",
+    "node_modules/@polkadot-api/json-rpc-provider",
+    "node_modules/@polkadot-api/json-rpc-provider-proxy",
+    "node_modules/@polkadot-api/metadata-builders",
+    "node_modules/@polkadot-api/observable-client",
+    "node_modules/@polkadot-api/substrate-bindings",
+    "node_modules/@polkadot-api/substrate-bindings/node_modules/@noble/hashes",
+    "node_modules/@polkadot-api/substrate-bindings/node_modules/@scure/base",
+    "node_modules/@polkadot-api/substrate-client",
+    "node_modules/@polkadot-api/utils",
+    "node_modules/@substrate/connect",
+    "node_modules/@substrate/connect-extension-protocol",
+    "node_modules/@substrate/connect-known-chains",
+    "node_modules/@substrate/light-client-extension-helpers",
+    "node_modules/buildcheck",
+    "node_modules/cpu-features",
+    "node_modules/detect-libc",
+    "node_modules/msgpackr-extract",
+    "node_modules/nan",
+    "node_modules/node-gyp-build-optional-packages",
+    "node_modules/scale-ts",
+    "node_modules/smoldot"
+  ],
+  "failures": []
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@sealed-pick/scale-compact",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "description": "Original, minimal SCALE compact integer adapter for Midnight address-format's ByteSink/Src use",
+  "exports": { ".": { "types": "./index.d.ts", "default": "./index.js" } }
+}

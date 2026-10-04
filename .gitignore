@@ -1,0 +1,12 @@
+node_modules/
+.cache/
+.tools/
+.local/
+dist/
+contracts/managed/*/keys/
+contracts/managed/*/zkir/
+*.log
+logs/
+.env
+codex-run.log
+run-codex.sh

@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": ".cache/run",
+    "allowJs": true,
+    "checkJs": false,
+    "sourceMap": true
+  },
+  "include": [
+    "packages/core/src/**/*.ts",
+    "scripts/**/*.ts",
+    "tests/**/*.ts",
+    "contracts/managed/sealed-pick/contract/index.js"
+  ]
+}

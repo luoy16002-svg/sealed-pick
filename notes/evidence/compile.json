@@ -1,0 +1,50 @@
+{
+  "compiler": "0.31.1",
+  "sourceSha256": "ad621c6ea9c0f083f522b2231d9db55fead2b33bc6c67ee94d150e02eb27a38c",
+  "builtAt": "2026-10-04T02:28:48.689Z",
+  "language": "0.23.0",
+  "runtime": "0.16.0",
+  "compilerArchiveSha256": "e291b4bab4d4e857707008f8b1c25c2b8e0c843f6c737d0ee6c0d9ac69a6bbfb",
+  "artifacts": [
+    {
+      "file": "contracts/managed/sealed-pick/keys/commit.prover",
+      "bytes": 5212219,
+      "sha256": "deee2cb71de7d60f6eae96e7a291e4653c392fe4124bd337b74024f2650d0dcf"
+    },
+    {
+      "file": "contracts/managed/sealed-pick/keys/commit.verifier",
+      "bytes": 2119,
+      "sha256": "c96f63a997da2a18d0d6177da25b655008d4f600c00914ca64feef03cf93e93f"
+    },
+    {
+      "file": "contracts/managed/sealed-pick/keys/createRoom.prover",
+      "bytes": 2820688,
+      "sha256": "d64ef923ee8fb0808dcd805d4419a9525405344006fa9f89de483b900d1955a4"
+    },
+    {
+      "file": "contracts/managed/sealed-pick/keys/createRoom.verifier",
+      "bytes": 2119,
+      "sha256": "b852edf948694c1643d1fe87905a9410afb1d8b7eff698d425f99b3b561d3816"
+    },
+    {
+      "file": "contracts/managed/sealed-pick/keys/joinRoom.prover",
+      "bytes": 2821026,
+      "sha256": "92bcbab46b618294a6503ff2de55d9fe628ce6f0176c190f8bbab3f3a24e38d0"
+    },
+    {
+      "file": "contracts/managed/sealed-pick/keys/joinRoom.verifier",
+      "bytes": 2119,
+      "sha256": "dcc5ec1a73200643f75c84c6099b19c65f8fc1f8fac09e22d7d2b5a281af1dc0"
+    },
+    {
+      "file": "contracts/managed/sealed-pick/keys/reveal.prover",
+      "bytes": 9955290,
+      "sha256": "6f69f30c1dacc4edddf358f04ff88a1b6a7eac1ace55120f8d59e459c34e0219"
+    },
+    {
+      "file": "contracts/managed/sealed-pick/keys/reveal.verifier",
+      "bytes": 2119,
+      "sha256": "131288e1558c4cb8d54523032e2348f32f0c1e106cf2b42345cb0e5272afb2f7"
+    }
+  ]
+}

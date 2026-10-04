@@ -1,0 +1,54 @@
+{
+  "name": "sealed-pick",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "packages/core",
+    "packages/web"
+  ],
+  "scripts": {
+    "setup:compiler": "node scripts/setup-compiler.mjs",
+    "compile": "node scripts/compile.mjs",
+    "compile:fast": "node scripts/compile.mjs --skip-zk",
+    "build": "tsc -p packages/core/tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test .cache/run/tests/*.test.js",
+    "demo": "node .cache/run/scripts/demo.js",
+    "demo:devnet": "node .cache/run/scripts/demo-devnet.js",
+    "devnet:up": "docker compose up -d --wait --wait-timeout 300",
+    "devnet:down": "docker compose down --remove-orphans",
+    "devnet:e2e": "node scripts/run-devnet.mjs",
+    "build:run": "tsc -p tsconfig.run.json",
+    "pretest": "npm run build:run",
+    "predemo": "npm run build:run",
+    "predemo:devnet": "npm run build:run",
+    "predevnet:e2e": "npm run build:run",
+    "check:licenses": "node scripts/check-licenses.mjs",
+    "web:dev": "npm run dev -w @sealed-pick/web",
+    "web:build": "npm run build -w @sealed-pick/web",
+    "web:typecheck": "npm run typecheck -w @sealed-pick/web"
+  },
+  "devDependencies": {
+    "@midnight-ntwrk/midnight-js-http-client-proof-provider": "4.1.1",
+    "@midnight-ntwrk/midnight-js-indexer-public-data-provider": "4.1.1",
+    "@midnight-ntwrk/midnight-js-network-id": "4.1.1",
+    "@midnight-ntwrk/midnight-js-node-zk-config-provider": "4.1.1",
+    "@midnight-ntwrk/testkit-js": "4.1.1",
+    "@types/node": "24.0.0",
+    "pino": "10.3.1",
+    "rxjs": "7.8.2",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "@midnight-ntwrk/onchain-runtime-v3": "3.0.0",
+    "@subsquid/scale-codec": "$@subsquid/scale-codec"
+  },
+  "dependencies": {
+    "@subsquid/scale-codec": "file:packages/scale-compact"
+  }
+}

@@ -1,0 +1,61 @@
+
+> sealed-pick@0.1.0 pretest
+> npm run build:run
+
+
+> sealed-pick@0.1.0 build:run
+> tsc -p tsconfig.run.json
+
+
+> sealed-pick@0.1.0 test
+> node --test .cache/run/tests/*.test.js
+
+(node:78260) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:63580) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[32m✔ public API completes a room with JSON-safe snapshots and results [90m(150.0489ms)[39m[39m
+[32m✔ clients cannot export early, double commit, or replace a sealed choice [90m(43.3288ms)[39m[39m
+[32m✔ API validates malformed inputs before they reach a transaction [90m(57.8834ms)[39m[39m
+[32m✔ reveal rejects missing, duplicate, mismatched and tampered shares without partial results [90m(82.34ms)[39m[39m
+[32m✔ public events contain no openings; observers cannot mutate state or transaction outcomes [90m(57.1528ms)[39m[39m
+[32m✔ same-client concurrent calls serialize and failed calls do not poison the queue [90m(61.1768ms)[39m[39m
+[32m✔ an ambiguous network error preserves the exact opening for a safe same-choice retry [90m(52.8144ms)[39m[39m
+(node:65368) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[32m✔ contract creates a room; only third distinct player opens committing [90m(83.0969ms)[39m[39m
+[32m✔ contract refuses option count 0 [90m(3.4804ms)[39m[39m
+[32m✔ contract refuses option count 1 [90m(3.3121ms)[39m[39m
+[32m✔ contract refuses option count 17 [90m(3.2027ms)[39m[39m
+[32m✔ contract refuses option count 255 [90m(3.7454ms)[39m[39m
+[32m✔ duplicate room and duplicate member cannot change public state [90m(24.1018ms)[39m[39m
+[32m✔ unknown room, fourth player, early commit and early reveal are rejected by circuits [90m(28.838ms)[39m[39m
+[32m✔ slot ownership is proved from private secret, not caller-supplied identity [90m(29.3687ms)[39m[39m
+[32m✔ out-of-range witness choice and double commit cannot change state [90m(37.8689ms)[39m[39m
+[32m✔ all choices stay sealed in commit order 0,1,2 [90m(46.6311ms)[39m[39m
+[32m✔ all choices stay sealed in commit order 0,2,1 [90m(47.9543ms)[39m[39m
+[32m✔ all choices stay sealed in commit order 1,0,2 [90m(51.9067ms)[39m[39m
+[32m✔ all choices stay sealed in commit order 1,2,0 [90m(44.4297ms)[39m[39m
+[32m✔ all choices stay sealed in commit order 2,0,1 [90m(48.0236ms)[39m[39m
+[32m✔ all choices stay sealed in commit order 2,1,0 [90m(52.5378ms)[39m[39m
+[32m✔ bad reveal (choice) is rejected atomically by the contract [90m(54.2727ms)[39m[39m
+[32m✔ bad reveal (nonce) is rejected atomically by the contract [90m(49.6489ms)[39m[39m
+[32m✔ bad reveal (swapped) is rejected atomically by the contract [90m(45.1095ms)[39m[39m
+[32m✔ valid reveal publishes all choices together and is final [90m(48.7805ms)[39m[39m
+[32m✔ scoring agrees with the cooperative rule for all 64 four-option triples [90m(2693.3131ms)[39m[39m
+[32m✔ commitments bind room, player, choice and nonce [90m(0.7556ms)[39m[39m
+[32m✔ rooms remain isolated on the same contract [90m(34.9858ms)[39m[39m
+[32m✔ raw public Compact ledger contains no choices before batch reveal (independent of UI filtering) [90m(31.3515ms)[39m[39m
+(node:73524) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[32m✔ permissive SCALE adapter and real Midnight address package agree with specification vectors [90m(1.1716ms)[39m[39m
+[32m✔ SCALE adapter handles full DUST field and maximum format size without precision loss [90m(1.2102ms)[39m[39m
+[32m✔ SCALE adapter rejects truncated, trailing, noncanonical and out-of-range values [90m(0.6214ms)[39m[39m
+[34mℹ tests 33[39m
+[34mℹ suites 0[39m
+[34mℹ pass 33[39m
+[34mℹ fail 0[39m
+[34mℹ cancelled 0[39m
+[34mℹ skipped 0[39m
+[34mℹ todo 0[39m
+[34mℹ duration_ms 3831.784[39m

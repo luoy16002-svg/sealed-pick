@@ -1,0 +1,22 @@
+{
+  "name": "@sealed-pick/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "vite --configLoader native",
+    "build": "vite build --configLoader native",
+    "preview": "vite preview --configLoader native",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@sealed-pick/core": "0.1.0",
+    "@fontsource/bricolage-grotesque": "5.3.0",
+    "@fontsource/jetbrains-mono": "5.3.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.2",
+    "vite-plugin-wasm": "3.6.0"
+  }
+}

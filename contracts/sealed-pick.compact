@@ -1,0 +1,124 @@
+// SPDX-License-Identifier: Apache-2.0
+pragma language_version >= 0.23.0;
+
+import CompactStandardLibrary;
+
+export enum Phase { lobby, committing, ready, revealed }
+
+export struct Opening {
+  choice: Uint<8>;
+  nonce: Bytes<32>;
+}
+
+export struct Room {
+  phase: Phase;
+  optionCount: Uint<8>;
+  joined: Uint<8>;
+  committedCount: Uint<8>;
+  members: Vector<3, Bytes<32>>;
+  commitments: Vector<3, Bytes<32>>;
+  committed: Vector<3, Boolean>;
+  choices: Vector<3, Uint<8>>;
+  score: Uint<8>;
+}
+
+export ledger rooms: Map<Bytes<32>, Room>;
+
+// These values are supplied from each client's off-chain private state.
+witness playerSecret(): Bytes<32>;
+witness ownOpening(roomId: Bytes<32>): Opening;
+witness allOpenings(roomId: Bytes<32>): Vector<3, Opening>;
+
+export pure circuit playerId(roomId: Bytes<32>, secret: Bytes<32>): Bytes<32> {
+  return persistentHash<[Bytes<32>, Bytes<32>, Bytes<32>]>(
+    [pad(32, "sealed-pick:player:v1"), roomId, secret]
+  );
+}
+
+export pure circuit commitment(
+  roomId: Bytes<32>, member: Bytes<32>, opening: Opening
+): Bytes<32> {
+  return persistentCommit<[Bytes<32>, Bytes<32>, Bytes<32>, Uint<8>]>(
+    [pad(32, "sealed-pick:choice:v1"), roomId, member, opening.choice], opening.nonce
+  );
+}
+
+export circuit createRoom(roomId: Bytes<32>, optionCount: Uint<8>): [] {
+  const id = disclose(roomId);
+  const options = disclose(optionCount);
+  assert(!rooms.member(id), "Room already exists");
+  assert(options >= 2 && options <= 16, "Options must be between 2 and 16");
+  const member = disclose(playerId(id, playerSecret()));
+  rooms.insert(id, Room {
+    phase: Phase.lobby, optionCount: options, joined: 1, committedCount: 0,
+    members: [member, default<Bytes<32>>, default<Bytes<32>>],
+    commitments: default<Vector<3, Bytes<32>>>,
+    committed: [false, false, false], choices: [0, 0, 0], score: 0
+  });
+}
+
+export circuit joinRoom(roomId: Bytes<32>): [] {
+  const id = disclose(roomId);
+  assert(rooms.member(id), "Unknown room");
+  const room = rooms.lookup(id);
+  assert(room.phase == Phase.lobby && room.joined < 3, "Room is full");
+  const member = disclose(playerId(id, playerSecret()));
+  for (const i of 0..3) {
+    assert(room.members[i] != member, "Player already joined");
+  }
+  rooms.insert(id, Room {
+    ...room,
+    members: [room.members[0], room.joined == 1 ? member : room.members[1],
+      room.joined == 2 ? member : room.members[2]],
+    joined: (room.joined + 1) as Uint<8>,
+    phase: room.joined == 2 ? Phase.committing : Phase.lobby
+  });
+}
+
+export circuit commit(roomId: Bytes<32>, slot: Uint<8>): [] {
+  const id = disclose(roomId);
+  const position = disclose(slot);
+  assert(rooms.member(id), "Unknown room");
+  const room = rooms.lookup(id);
+  assert(room.phase == Phase.committing, "Room is not accepting commitments");
+  assert(position < 3, "Invalid slot");
+  const member = position == 0 ? room.members[0] :
+    (position == 1 ? room.members[1] : room.members[2]);
+  const alreadyCommitted = position == 0 ? room.committed[0] :
+    (position == 1 ? room.committed[1] : room.committed[2]);
+  assert(playerId(id, playerSecret()) == member, "Player does not own slot");
+  assert(!alreadyCommitted, "Player already committed");
+  const opening = ownOpening(id);
+  assert(opening.choice < room.optionCount, "Choice is out of range");
+  const digest = disclose(commitment(id, member, opening));
+  rooms.insert(id, Room {
+    ...room,
+    commitments: [position == 0 ? digest : room.commitments[0],
+      position == 1 ? digest : room.commitments[1],
+      position == 2 ? digest : room.commitments[2]],
+    committed: [room.committed[0] || position == 0,
+      room.committed[1] || position == 1, room.committed[2] || position == 2],
+    committedCount: (room.committedCount + 1) as Uint<8>,
+    phase: room.committedCount == 2 ? Phase.ready : Phase.committing
+  });
+}
+
+// One transaction publishes all three choices. No partial public reveal exists.
+// A cooperative coordinator collects openings only AFTER the ready phase.
+export circuit reveal(roomId: Bytes<32>): [] {
+  const id = disclose(roomId);
+  assert(rooms.member(id), "Unknown room");
+  const room = rooms.lookup(id);
+  assert(room.phase == Phase.ready && room.committedCount == 3, "Not ready to reveal");
+  const openings = allOpenings(id);
+  for (const i of 0..3) {
+    assert(openings[i].choice < room.optionCount, "Choice is out of range");
+    assert(commitment(id, room.members[i], openings[i]) == room.commitments[i],
+      "Opening does not match commitment");
+  }
+  const choices = disclose([openings[0].choice, openings[1].choice, openings[2].choice]);
+  const matched = choices[0] == choices[1] && choices[1] == choices[2];
+  rooms.insert(id, Room { ...room, phase: Phase.revealed, choices: choices,
+    score: matched ? 1 : 0 });
+}
+
