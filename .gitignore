@@ -10,3 +10,5 @@ logs/
 .env
 codex-run.log
 run-codex.sh
+slides/png/
+slides/_one.html

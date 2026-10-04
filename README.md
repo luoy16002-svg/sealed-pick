@@ -6,6 +6,8 @@ The game only works if nobody can see the other picks early and nobody can chang
 
 ![The table during a round: three phones with sealed envelopes and the public ledger on the right](notes/screenshot-sealed.png)
 
+Demo video (83 s) and slides: see the [v0.1.0 release](https://github.com/luoy16002-svg/sealed-pick/releases/tag/v0.1.0). The deck source is in `slides/`.
+
 ## How a round works
 
 1. One player opens a room. Two more join, and the third join closes the lobby.
@@ -27,6 +29,7 @@ Picks cannot leak before the last seal, because the ledger never holds them. A p
 | `scripts/` | Compiler setup, compilation, the CLI demo and the local devnet run with real proofs |
 | `tests/` | 33 tests: contract rules, client behaviour, privacy of the raw ledger, encoding |
 | `notes/` | Architecture, API, exact commands, test results and evidence files |
+| `slides/` | The pitch deck (HTML source and PDF) |
 
 ## Run it
 
