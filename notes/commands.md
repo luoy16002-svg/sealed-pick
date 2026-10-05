@@ -72,6 +72,33 @@ Always finish with `devnet:down`, or prefer `devnet:e2e` for automatic cleanup. 
 
 Do not stop another project's services if ports conflict; change this project's Compose ports and matching loopback constants together. The supplied devnet script has no public-network or faucet option. A brief `subscribeRuntimeVersion ... Normal Closure` message during wallet startup was observed on successful runs and is not itself failure. Use exit status, receipt status, and the final reveal as success evidence.
 
+Each finalized transaction prints one line with its block height, transaction hash and status. A run on 2026-10-05 (Windows, Docker 28.1.1, warm image cache) took 180 s from wallet start to the reveal, about 18 s per proven transaction:
+
+```text
+[  47.7s] deploy      block 8        tx 36a39a…ef2c  SucceedEntirely  contract 8ba2360a…934e78
+[  65.0s] createRoom  block 11       tx afa72c…ca7d  SucceedEntirely  room e44b58…2dac, 4 options, seat 0 taken
+[ 119.6s] commit      block 20       tx b49299…4125  SucceedEntirely  seat 0 sealed c67cb503…9ffb, ledger holds 1/3 seals and no choices
+[ 179.6s] reveal      block 30       tx b1420b…3da9  SucceedEntirely  choices [2,2,2], score 1
+```
+
+`scripts/network-game.ts` holds the round itself; the local run and the Preprod run below share it.
+
+## Public test network (Preprod)
+
+The same round runs on Midnight Preprod with one command once the fee wallet holds tNIGHT. The node and indexer are Midnight's public Preprod services; the proof server still runs locally in Docker, because it sees each player's private inputs.
+
+```sh
+npm run preprod:check    # read-only: confirms the Preprod node and indexer answer
+npm run preprod:wallet   # once: creates .local/preprod-wallet.json and prints the tNIGHT address
+# request tNIGHT for that address at https://midnight-tmnight-preprod.nethermind.dev/ (CAPTCHA)
+npm run preprod:e2e      # proof server up, wallet sync, DUST registration, the full round, proof server down
+```
+
+- `preprod:wallet` never overwrites an existing seed and never prints it. `SEALED_PICK_PREPROD_SEED` (64 hex characters) can be used instead of the file. `.local/` is git-ignored.
+- `preprod:e2e` never calls the faucet. With no tNIGHT it prints the address and exits with code 2 before sending anything. With tNIGHT it registers the NIGHT for DUST generation, waits up to 45 minutes for DUST, then deploys and plays the round.
+- Receipts go to `notes/evidence/preprod.json`, including the contract address; look the transactions up on [Midnight Explorer](https://preprod.midnightexplorer.com/).
+- The first wallet sync against a long-running public chain can take a while; later runs reuse nothing between processes, so expect a sync each time.
+
 ## License-sensitive install settings
 
 Use this repository's `.npmrc` and lockfile. `omit=optional` excludes unused GPL light-client packages. The local SCALE integer adapter replaces a GPL transitive codec; `notes/licenses.md` explains its scope and tests. Do not override these choices with `--include=optional`. `check:licenses` verifies what is actually installed. No vendored `node_modules`, compiler binaries, logs, caches, or wallet/private-state files should be published.
