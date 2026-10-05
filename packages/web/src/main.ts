@@ -209,7 +209,7 @@ function phoneScreen(i: number): string {
       <p class="letter-label">Sealed. The ledger holds only this seal.</p>
       <div class="private"><span class="private-tag">Only on ${esc(p.name)}'s phone</span><b>${esc(pick)}</b><span class="private-sub">plus a random 32-byte nonce, in private state</span></div>
       ${p.refused
-        ? `<div class="refusal" role="status"><b>The circuit refused the swap</b>A modified app skipped its own checks and sent a second pick for ${esc(p.name)}'s seat. The circuit answered ${quote(p.refused)}. The first seal stays.</div>`
+        ? `<div class="refusal" role="status"><b>The circuit refused the swap</b>A modified app skipped its own checks and sent a second pick for this seat. The circuit answered ${quote(p.refused)}.</div>`
         : `<button class="tamper" data-act="change" data-i="${i}">${ICON.swap}Cheat with a modified app</button>`}
       ${phoneCta(i)}
     </div>`;
