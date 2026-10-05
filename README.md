@@ -1,7 +1,7 @@
 # Sealed Pick
 
 **Play it:** https://luoy16002-svg.github.io/sealed-pick/ (runs in the browser, no wallet needed)<br>
-**Video:** https://youtu.be/TBD
+**Video:** https://youtu.be/W6ZzcRwYkLI
 
 A party game for three people on Midnight. A question comes up, for example "You lost each other in a huge train station. Where do you wait?", and everyone picks an answer without talking. You win the round if all three picked the same thing.
 
