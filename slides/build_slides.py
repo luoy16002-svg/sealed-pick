@@ -1,8 +1,7 @@
-"""Builds slides/sealed-pick.html from the evidence files, then (with --export) prints the PDF and one PNG per slide
-with headless Chrome. Usage: python slides/build_slides.py [--export]"""
+"""Builds slides/sealed-pick.html from the evidence files and the app's brand mark, then (with --export) prints the PDF
+and one PNG per slide with Playwright's Chromium. Usage: python slides/build_slides.py [--export]"""
 import json
 import shutil
-import subprocess
 import sys
 from pathlib import Path
 
@@ -23,6 +22,8 @@ for pkg, files in {
         shutil.copy(lic, FONTS / f'{pkg}-OFL.txt')
 
 dev = json.loads((ROOT / 'notes/evidence/devnet.json').read_text(encoding='utf-8'))
+# the wax-seal emblem the app ships as its favicon (packages/web/public/favicon.svg), drawn at slide size
+EMBLEM = (ROOT / 'packages/web/public/favicon.svg').read_text(encoding='utf-8').replace('width="64" height="64"', 'width="300" height="300"')
 rows = ''.join(
     f'<div class="tx"><span class="c">{r["circuit"]}</span><span class="h">block {r["blockHeight"]}</span>'
     f'<span class="id">{r["txHash"][:8]}…{r["txHash"][-4:]}</span><span class="ok">{r["status"]}</span></div>'
@@ -67,7 +68,7 @@ p {{ margin: 0 0 26px; max-width: 1400px; }}
 .foot {{ position: absolute; left: 140px; right: 140px; bottom: 70px; display: flex; justify-content: space-between; font-size: 24px; color: var(--muted); }}
 .st {{ font-family: 'Bricolage Grotesque'; font-weight: 800; letter-spacing: .06em; fill: rgba(78,14,6,.6); }} .st.hi {{ fill: rgba(255,210,196,.32); }}
 .title {{ display: grid; grid-template-columns: 300px 1fr; gap: 70px; align-items: center; margin-top: 120px; }}
-.title [data-seal] {{ filter: drop-shadow(0 16px 20px rgba(0,0,0,.5)); }}
+.title .emblem {{ display: grid; filter: drop-shadow(0 16px 20px rgba(0,0,0,.5)); }}
 .rules {{ list-style: none; padding: 0; margin: 10px 0 44px; display: grid; gap: 22px; }}
 .rules li {{ padding-left: 54px; position: relative; color: var(--ink); font-size: 44px; }}
 .rules li::before {{ content: ''; position: absolute; left: 0; top: 18px; width: 22px; height: 22px; border-radius: 50%; background: var(--wax); }}
@@ -97,10 +98,15 @@ p {{ margin: 0 0 26px; max-width: 1400px; }}
 .col h3 {{ font-size: 44px; margin: 0 0 18px; color: var(--ink); }}
 .col p {{ font-size: 36px; }}
 .cmd {{ display: inline-block; margin: 26px 0 40px; padding: 26px 36px; border-radius: 18px; background: #070b0c; border: 1px solid #1b272c; font-size: 38px; color: var(--ok); }}
+.shot {{ display: grid; grid-template-columns: 520px 1fr; gap: 56px; align-items: center; margin-top: 10px; }}
+.shot img {{ width: 100%; border-radius: 18px; border: 1px solid #22313a; box-shadow: 0 30px 60px -28px rgba(0,0,0,.8); }}
+.shot p {{ font-size: 32px; }}
+.url {{ display: inline-block; margin-top: 10px; padding: 14px 20px; border-radius: 14px; background: #070b0c; border: 1px solid #1b272c; font-size: 22px; color: var(--ok); white-space: nowrap; }}
+.small {{ font-size: 30px; color: var(--muted); }}
 </style></head><body>
 
 <section class="slide">
-  <div class="title"><div data-seal="5ea1edc0de" data-size="300"></div>
+  <div class="title"><div class="emblem">{EMBLEM}</div>
   <div><h1>Sealed Pick</h1><p class="lead" style="margin-top:34px">A party game for three on Midnight. Everyone seals a pick through a Compact contract; the seals break together.</p></div></div>
   <div class="foot"><span class="mono">github.com/luoy16002-svg/sealed-pick</span><span>Midnight WaveHack · Wave 2</span></div>
 </section>
@@ -120,6 +126,19 @@ p {{ margin: 0 0 26px; max-width: 1400px; }}
     <div class="step"><div class="n">01</div><h3>Seal</h3><p>Each phone keeps its choice and a random nonce in private state. The commit circuit proves the player owns the seat and the choice is in range, and discloses only the seal.</p></div>
     <div class="step"><div class="n">02</div><h3>Wait</h3><p>The public ledger shows three seals and a counter. No choice exists on chain yet, so there is nothing to peek at.</p></div>
     <div class="step"><div class="n">03</div><h3>Break</h3><p>After the last seal, the openings go to one player. The reveal circuit checks all three against their seals and publishes the choices and the score in one transaction.</p></div>
+  </div>
+</section>
+
+<section class="slide" style="padding-top: 100px">
+  <div class="kicker">The live table</div>
+  <h2 style="margin-bottom: 40px">Play a round in the browser.</h2>
+  <div class="shot">
+    <div>
+      <p>Three phones and the public ledger, in one tab. The compiled Compact circuits run in the page.</p>
+      <p>After a seal, "Cheat with a modified app" sends a second pick straight to the circuit. It answers "Player already committed".</p>
+      <div class="url mono">luoy16002-svg.github.io/sealed-pick</div>
+    </div>
+    <img src="../notes/screenshot-sealed.png" alt="The Sealed Pick table during a round">
   </div>
 </section>
 
@@ -151,7 +170,7 @@ p {{ margin: 0 0 26px; max-width: 1400px; }}
   <h2>Where Sealed Pick goes from here.</h2>
   <div class="cols3">
     <div class="col"><h3>Who plays</h3><p>Friends on a call, classrooms learning about focal points, stream audiences voting without seeing the running tally.</p></div>
-    <div class="col"><h3>What we build next</h3><p>Deploy to Midnight Preview once a funded wallet is available. Send openings between phones over an encrypted channel. Room links and more seats.</p></div>
+    <div class="col"><h3>What we build next</h3><p>The same round on Preprod: the script is ready and waits for faucet funds. Openings sent between phones over an encrypted channel. Room links and more seats.</p></div>
     <div class="col"><h3>How it pays</h3><p>Free to play. Paid question packs, and branded rooms for streamers and events.</p></div>
   </div>
 </section>
@@ -159,8 +178,9 @@ p {{ margin: 0 0 26px; max-width: 1400px; }}
 <section class="slide">
   <div class="kicker">Try it</div>
   <h2>Three phones, one ledger, no peeking.</h2>
-  <div class="cmd mono">npm ci &amp;&amp; npm run build &amp;&amp; npm run web:dev</div>
-  <p>Then open localhost:5391 and press “Play a round for me”, or play all three phones yourself.</p>
+  <div class="cmd mono">luoy16002-svg.github.io/sealed-pick</div>
+  <p>Press “Play a round for me”, or play all three phones yourself. On a phone, the table shows one seat at a time.</p>
+  <p class="small">Locally: <span class="mono">npm ci &amp;&amp; npm run build &amp;&amp; npm run web:dev</span>, then open localhost:5391.</p>
   <div class="foot"><span class="mono">github.com/luoy16002-svg/sealed-pick</span><span>Apache-2.0</span></div>
 </section>
 
@@ -172,19 +192,18 @@ out.write_text(HTML, encoding='utf-8')
 print('wrote', out)
 
 if '--export' in sys.argv:
-    chrome = r'C:\Program Files\Google\Chrome\Application\chrome.exe'
-    prof = Path(r'C:\Users\fuddl\.claude\jobs\6bdef825\tmp\chrome-slides-profile')
-    url = out.as_uri()
-    subprocess.run([chrome, '--headless=new', '--disable-gpu', f'--user-data-dir={prof}', '--no-pdf-header-footer',
-                    '--virtual-time-budget=4000', f'--print-to-pdf={HERE / "sealed-pick.pdf"}', url], check=True, capture_output=True)
+    from playwright.sync_api import sync_playwright
     png = HERE / 'png'
     png.mkdir(exist_ok=True)
-    n = HTML.count('<section class="slide">')
-    for i in range(n):
-        one = HERE / f'_one.html'
-        # show only slide i, at native size
-        one.write_text(HTML.replace('</style>', f'.slide {{ display: none; }} .slide:nth-of-type({i + 1}) {{ display: block; }}</style>'), encoding='utf-8')
-        subprocess.run([chrome, '--headless=new', '--disable-gpu', '--hide-scrollbars', f'--user-data-dir={prof}', '--window-size=1920,1080',
-                        '--virtual-time-budget=4000', f'--screenshot={png / f"slide{i + 1}.png"}', one.as_uri()], check=True, capture_output=True)
-    (HERE / '_one.html').unlink(missing_ok=True)
-    print('exported pdf and', n, 'pngs')
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch()
+        page = browser.new_page(viewport={'width': 1920, 'height': 1080})
+        page.goto(out.as_uri(), wait_until='networkidle')
+        page.evaluate('document.fonts.ready')
+        page.wait_for_timeout(300)
+        page.pdf(path=str(HERE / 'sealed-pick.pdf'), width='1920px', height='1080px', print_background=True)
+        slides = page.query_selector_all('section.slide')
+        for i, el in enumerate(slides):
+            el.screenshot(path=str(png / f'slide{i + 1}.png'))
+        browser.close()
+    print('exported pdf and', len(slides), 'pngs')
